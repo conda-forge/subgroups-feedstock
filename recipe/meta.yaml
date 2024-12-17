@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.11
     - setuptools
     - wheel
     - pip
   run:
-    - python >=3.9
-    - pandas >=2.0.3
-    - bitarray >=2.7.6
+    - python >=3.11
+    - pandas >=2.1.4
+    - bitarray >=3.0.0
     - statsmodels >=0.14.0
 
 test:
@@ -38,8 +38,8 @@ test:
 
 about:
   home: https://github.com/antoniolopezmc/subgroups
-  summary: subgroups is a python library which contains a collection of subgroup discovery algorithms and other data analysis utilities
-  license: BSD-3-Clause
+  summary: subgroups is a python library which contains a collection of subgroup discovery algorithms and other data analysis utilities.
+  license: BSD-4-Clause
   license_file: LICENSE
 
 extra:
