@@ -5,9 +5,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/subgroups-feeds
 
 Home: https://github.com/antoniolopezmc/subgroups
 
-Package license: BSD-3-Clause
+Package license: BSD-4-Clause
 
-Summary: subgroups is a python library which contains a collection of subgroup discovery algorithms and other data analysis utilities
+Summary: subgroups is a python library which contains a collection of subgroup discovery algorithms and other data analysis utilities.
 
 Current build status
 ====================
