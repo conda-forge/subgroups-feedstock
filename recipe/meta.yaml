@@ -1,5 +1,5 @@
 {% set name = "subgroups" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/subgroups-{{ version }}.tar.gz
-  sha256: 6ce36e7c9e2a7a91349e86a648481f36ddf95a8d24523102cd4c3244abd0be47
+  sha256: d1dc3986c3eacb430b28b44580b9c245c9bf0c2550ca0360fd2445cfca8475b1
 
 build:
   noarch: python
