@@ -1,3 +1,4 @@
+{% set python_min = '3.11' %}
 {% set name = "subgroups" %}
 {% set version = "0.1.11" %}
 
@@ -12,16 +13,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.11
+    - python {{ python_min }}
     - setuptools
     - wheel
     - pip
   run:
-    - python >=3.11
+    - python >={{ python_min }}
     - pandas >=2.1.4
     - bitarray >=3.0.0
     - statsmodels >=0.14.0
@@ -35,6 +36,7 @@ test:
     - python -c "import subgroups.tests as st; st.run_all_tests()"
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/antoniolopezmc/subgroups
